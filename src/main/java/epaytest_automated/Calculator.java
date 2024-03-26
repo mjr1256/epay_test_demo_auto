@@ -102,7 +102,7 @@ public class Calculator {
              if (exitCode != 0) {
                  // La commande s'est terminée avec un code de sortie non nul
                  System.err.println("La commande adb shell epaytest --gtest_filter=IccardTest.psam1 s'est terminée avec un code de sortie non nul : " + exitCode);
-                 return 0;
+                 return -1;
              } else {
                  System.out.println("La commande adb shell epaytest --gtest_filter=IccardTest.psam1 s'est exécutée avec succès.");
                  return 0;
@@ -111,7 +111,7 @@ public class Calculator {
              // Gérer les exceptions en cas d'erreur lors de l'exécution de la commande adb shell
              System.err.println("Erreur lors de l'exécution de la commande adb shell : " + e.getMessage());
              e.printStackTrace();
-             return -3;
+             return -1;
          }
   
     }
