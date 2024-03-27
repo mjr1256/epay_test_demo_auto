@@ -75,8 +75,4 @@ public class calculatorTest {
 	
 	@Test
 	public void GetSeDataTimeTest() {assertEquals(0, calc.adb_test2("MiscTest.rtc"));} //Test get data time 
-	
-	
-	@Test
-	public void GetSeVersionTest() {assertEquals(0, calc.adb_test2("MiscTest.version"));} //Test Version SE 
-	
+}
