@@ -74,4 +74,6 @@ public class calculatorTest {
 	public void GetBatteryVoltageTest() {assertEquals(0, calc.adb_test2("MiscTest.coinVol"));} //Test get battery voltage
 	@Test
 	public void GetSeDataTimeTest() {assertEquals(0, calc.adb_test2("MiscTest.rtc"));} //Test get data time 
+	@Test
+	public void GetSeVersionTest() {assertEquals(0, calc.adb_test2("MiscTest.version"));} //Test Version SE 
 }
